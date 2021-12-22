@@ -169,10 +169,13 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if (numero > 0) {
-    return "es positivo"
-  } 
-    return "es negativo"
-}
+    return "Es positivo";
+  } else if (numero < 0){
+    return "Es negativo";
+  } else if (numero == 0){
+    return false;
+  }
+  }
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
@@ -185,16 +188,14 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  Console.log(nombre + apellido)
+ return (nombre + apellido)
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  var nombre = "Martin";
-  console.log("Hola" + nombre);
-  return (nombre + "!");
+  return ("hola " + nombre + "!");
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -234,8 +235,7 @@ function esVocal(letra){
   //Escribe tu código aquí
   if (a, e, i, o, u){
     return "Es vocal"
-  }
-  return "Dato incorrecto"
+  } return "Dato incorrecto"
 }
 
 
