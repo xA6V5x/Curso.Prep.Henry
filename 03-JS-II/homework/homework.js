@@ -155,7 +155,7 @@ if(numero < 2) {
     return false;
  } else if (numero == 2) { 
     return true;
- } for(var i = 2; numero > i; 3) {
+ } for(var i = 2; numero > i; i++) {
      if(numero % i == 0) {
        return false
     }
@@ -166,7 +166,10 @@ function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-
+ if (valor == true) {
+   return "Soy verdadero";
+ } else (valor == false)
+     return "Soy falso";
 }
 
 function tablaDelSeis(){
