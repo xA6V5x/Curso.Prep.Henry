@@ -142,7 +142,7 @@ function operadoresLogicos(num1, num2, num3) {
     return "Error";
   } else if (num3 > num1 && num3 > num2) {
     return (num3 + 1);
-  } return "Error"
+  } return false
 }
 
 function esPrimo(numero) {
