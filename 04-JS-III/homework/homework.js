@@ -79,9 +79,22 @@ function agregarNumeros(numeros) {
   // Suma todos los enteros y devuelve el valor
   // Tu código:
   var suma = 0
-  for (var i = 0; i < numeros.length; i++) {
-    suma = suma + numeros[i]
-  } return suma
+  // 
+  // 2, 4, 6, 3, 5
+  // 3, 9, 8, 2 , 7
+  // 1, 5, 2 ,3 , 4
+                    
+  /*
+  1ra vez -> i = 0...
+  Siempre numeros.length =5
+
+  */
+  for (var i = 0; i < numeros.length; i++) { 
+
+    suma = suma + numeros[i] // suma = 2 + 4
+  } 
+  
+  return suma
 }
 
 
@@ -97,13 +110,41 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+
+
+return Math.max.apply(null, numeros);
+   
+
+        /*
+            var maximo = numeros[0][0];
+            for (var p = 0; p < numeros.length; p++){
+                  
+              for(var h = 0; h < numeros[p].length; h++) {
+                      if (numeros[p][h] > maximo) { 
+                        maximo = numeros[p][h];
+                        }
+                      } 
+            }
+          
+
+        return maximo;
+        */
 }
+
 
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+  if (arguments.length < 1) {
+     return 0
+  }
+  total = 1
+  for (var i = 0; i < arguments.length; i++) {
+     total = total * arguments[i]
+  }
+  return total
 }
 
 
