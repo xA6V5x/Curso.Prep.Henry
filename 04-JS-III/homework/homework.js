@@ -129,6 +129,16 @@ return Math.max.apply(null, numeros);
 
         return maximo;
         */
+       /*
+        var maximo = numeros[0];
+        for(var i = 1; i < numeros.length; i++) {
+          if(numeros[i] > maximo) { 
+            maximo = numeros[i];
+          }
+        }
+        return maximo;
+      }
+      */
 }
 
 
@@ -148,27 +158,36 @@ function multiplicarArgumentos() {
 }
 
 
-function cuentoElementos(arreglo){
+function cuentoElementos(arreglo) {
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
-  //Escribe tu código aquí
-
+  //Escribe tu código aquí:
+let contador = 0;
+ for (let i = 0; i < arreglo.length; i++) {
+  if (arreglo[i] > 18) {
+    contador++;
+ }
+} return contador;
 }
-
 
 function diaDeLaSemana(numeroDeDia) {
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  
-} 
+  if (numeroDeDia == 2 || numeroDeDia == 3 || numeroDeDia == 4 || numeroDeDia == 5 || numeroDeDia == 6) {
+  return "Es dia Laboral"
+} else if (numeroDeDia == 1 || numeroDeDia == 7)
+return "Es fin de semana"
+}
 
 
 function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  
+  if (n == 9) {
+    return true
+  } return false
 }
 
 
