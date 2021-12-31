@@ -185,9 +185,11 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  if (n == 9) {
+  let num = n.toString()
+  if (num.charAt(0) == "9") {
     return true
-  } return false
+  } 
+  return false
 }
 
 
@@ -195,7 +197,22 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  
+  var inicial = arreglo[0];
+  for (var i = 1; i < arreglo.length; i++)
+   if (arrego[i] != arreglo) {
+     return false
+   } 
+   return true
+  /*
+        var maximo = numeros[0];
+        for(var i = 1; i < numeros.length; i++) {
+          if(numeros[i] > maximo) { 
+            maximo = numeros[i];
+          }
+        }
+        return maximo;
+      }
+      */
 } 
 
 
