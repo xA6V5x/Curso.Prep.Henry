@@ -203,7 +203,7 @@ function doWhile(numero) {
   }
   while(i < 8);
   return a;
-}//una forma mas censilla de resolver es "return (numero + (8 * 5))"
+}//una forma mas sencilla de resolver es "return (numero + (8 * 5))"
 
 // No modificar nada debajo de esta línea
 // --------------------------------

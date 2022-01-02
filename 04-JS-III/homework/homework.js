@@ -176,8 +176,9 @@ function diaDeLaSemana(numeroDeDia) {
   //Escribe tu código aquí   
   if (numeroDeDia == 2 || numeroDeDia == 3 || numeroDeDia == 4 || numeroDeDia == 5 || numeroDeDia == 6) {
   return "Es dia Laboral"
-} else if (numeroDeDia == 1 || numeroDeDia == 7)
+} else if (numeroDeDia == 1 || numeroDeDia == 7) {
 return "Es fin de semana"
+}
 }
 
 
@@ -197,30 +198,31 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  var inicial = arreglo[0];
-  for (var i = 1; i < arreglo.length; i++)
-   if (arrego[i] != arreglo) {
-     return false
-   } 
-   return true
+  
   /*
-        var maximo = numeros[0];
-        for(var i = 1; i < numeros.length; i++) {
-          if(numeros[i] > maximo) { 
-            maximo = numeros[i];
-          }
-        }
-        return maximo;
-      }
-      */
+  var inicial = arreglo[0];
+  for (var i = 1; i < arreglo.length; i++) {
+    if (arrego[i] != inicial) {
+     return false;
+     }
+   } 
+   return true;
 } 
-
+*/
+for (var i = 0; i < arreglo.length -1; i++) {
+  if (arreglo[i+1] !== arreglo[0]) {
+    return false
+  }
+}
+ return true
+}
 
 function mesesDelAño(array) {
   //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
+
 }
 
 
@@ -228,6 +230,12 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  var nuevoarray = []
+  for (var i = 0; i < array.length; i++) {
+  if (array[i] > 100)
+  nuevoarray.push(array[i])
+  }
+  return nuevoarray
 }
 
 
@@ -235,10 +243,14 @@ function breakStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
   //Guardar cada nuevo valor en un array. 
   //Devolver el array
-  //Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución y 
+  //Si en algún momento el valor de la suma y la cantidad de iteracciones coinciden, debe interrumpirse la ejecución y 
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  var array = []
+  var a = numero;
+  var i = 0
+ 
 }
 
 
