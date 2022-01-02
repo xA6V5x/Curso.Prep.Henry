@@ -199,23 +199,14 @@ function todosIguales(arreglo) {
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
   
-  /*
   var inicial = arreglo[0];
   for (var i = 1; i < arreglo.length; i++) {
-    if (arrego[i] != inicial) {
+    if (arreglo[i] != inicial) {
      return false;
      }
    } 
    return true;
 } 
-*/
-for (var i = 0; i < arreglo.length -1; i++) {
-  if (arreglo[i+1] !== arreglo[0]) {
-    return false
-  }
-}
- return true
-}
 
 function mesesDelAño(array) {
   //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
@@ -248,8 +239,16 @@ function breakStatement(numero) {
   //Pista: usá el statement 'break'
   // Tu código:
   var array = []
-  var a = numero;
-  var i = 0
+  var suma = numero;
+  for (var i = 0; i < 10; i++) {
+    suma = suma + 2;
+    if (i == suma){
+      return "Se interrumpió la ejecución";
+    }
+    array[i] = suma;
+
+  }
+  return array;
  
 }
 
@@ -261,6 +260,15 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  var array = []
+  var suma = numero;
+  for (var i = 0; i < 10; i++) {
+   suma = suma + 2  
+    array.push(suma);
+  }
+
+  return array;
+
 }
 
 
