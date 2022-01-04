@@ -148,12 +148,15 @@ function multiplicarArgumentos() {
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
   if (arguments.length < 1) {
-     return 0
+  
+    return 0
   }
-  total = 1
-  for (var i = 0; i < arguments.length; i++) {
-     total = total * arguments[i]
+   total = 1
+   for (var i = 0; i < arguments.length; i++) {
+   
+    total = total * arguments[i]
   }
+ 
   return total
 }
 
@@ -162,11 +165,14 @@ function cuentoElementos(arreglo) {
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí:
 let contador = 0;
- for (let i = 0; i < arreglo.length; i++) {
-  if (arreglo[i] > 18) {
-    contador++;
- }
-} return contador;
+   for (let i = 0; i < arreglo.length; i++) {
+    if (arreglo[i] > 18) {
+      contador++;
+    }
+ 
+  } 
+
+  return contador;
 }
 
 function diaDeLaSemana(numeroDeDia) {
@@ -237,8 +243,8 @@ function mayorACien(array) {
   // Tu código:
   var nuevoarray = []
   for (var i = 0; i < array.length; i++) {
-  if (array[i] > 100)
-  nuevoarray.push(array[i])
+    if (array[i] > 100)
+    nuevoarray.push(array[i])
   }
   return nuevoarray
 }
