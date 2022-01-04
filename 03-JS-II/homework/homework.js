@@ -155,7 +155,7 @@ if(numero < 2) {
     return false;
  } else if (numero == 2) { 
     return true;
- } for(var i = 2; numero > i; i++) {
+ } for(var i = 2; i < numero; i++) {
      if(numero % i == 0) {
        return false
     }
