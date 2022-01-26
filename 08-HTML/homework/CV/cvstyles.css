@@ -1,0 +1,29 @@
+body {
+    background-image: url("https://verdecora.es/blog/wp-content/uploads/2021/09/plantas-oficina.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    margin-left: 32%;
+    margin-right: auto;
+ }
+#thirdDiv {
+    width: 500px;
+    background: rgb(255, 255, 255);
+    padding-top: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+ }
+ .divClass {
+    height: 100%;
+    width: 500px;
+    background: rgb(255, 255, 255);
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+ }
+ #img{
+     padding-left: 29%;
+ }
+ #name {
+     padding-left: 16%;
+ }
